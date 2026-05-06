@@ -18,7 +18,7 @@
 
 ## 从源码到运行
 
-完整流程见 [编译通识](../topics/compilation.md)。这里只强调 C 语言特有的要点：
+完整流程见 [编译通识](../topics/02-build-pipeline.md)。这里只强调 C 语言特有的要点：
 
 ```
 main.c ──[预处理]──▶ main.i ──[编译]──▶ main.s ──[汇编]──▶ main.o
