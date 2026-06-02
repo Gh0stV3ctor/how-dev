@@ -63,7 +63,7 @@ func doSomething() (*Data, error) {
 - 显式：错误是返回值的一部分，调用者必须面对它
 - **Rust 的 `?`**：传播语法糖，遇到错误提前返回（不写 `if err != nil`）
 - **Go 的 `if err != nil`**：没有语法糖，每步手动检查。是 Go 社区最被讨论的特征
-- **C++23 `std::expected<T, E>`**：引入类似 Rust 的 Result 模式
+- **C++23 `std::expected<T, E>`** ：引入类似 Rust 的 Result 模式
 
 ### 异常（Exception）
 
@@ -247,7 +247,7 @@ async def fetch_url(url):
 | Rust | Tokio（主流）/ async-std | 运行时是库而非语言的一部分 |
 | Python | asyncio（标准库） | 需配合 `aiohttp`/`httpx` 等异步库 |
 | Go | 无 async/await | goroutine 替代了一切——同步代码、异步执行 |
-| C# | 内建（Task/Task<T>） | 语言级别支持 |
+| C# | 内建（`Task`/`Task<T>`） | 语言级别支持 |
 | C++ | `co_await`（C++20） | 语言级别，但生态未成熟 |
 
 ### Channel / CSP（通信顺序进程）
@@ -305,7 +305,7 @@ end
 | **null / undefined** | `let x = null; let y;` | JavaScript（两种"空"！） |
 | **None** | `x = None` | Python |
 | **nil** | `var x *int = nil` | Go |
-| **Option<T>** | `let x: Option<i32> = None;` | Rust（编译器强制处理） |
+| **`Option<T>`** | `let x: Option<i32> = None;` | Rust（编译器强制处理） |
 | **Nullable types** | `string? name = null;` | TypeScript、C# 8+、Kotlin |
 | **Maybe** | `Maybe Int` | Haskell |
 

@@ -272,8 +272,8 @@ C++ 支持多种错误处理方案，当前在过渡期：
 |------|------|---------|
 | **异常** | `throw` / `try` / `catch` | 传统 C++，标准库使用 |
 | **错误码（error_code）** | `std::error_code` + `std::expected`（C++23） | 不想要异常开销的场景 |
-| **std::expected<T, E>** | C++23 的 Result 类型（类似 Rust） | 新项目推荐 |
-| **std::optional<T>** | 值可能存在也可能不存在 | 替代 null 的场景 |
+| **`std::expected<T, E>`** | C++23 的 Result 类型（类似 Rust） | 新项目推荐 |
+| **`std::optional<T>`** | 值可能存在也可能不存在 | 替代 null 的场景 |
 
 **现状**：Google/LLVM 等大型项目禁用异常（历史原因和性能考量），但现代 C++ 推荐使用异常或 `std::expected`。C++23 的 `std::expected` 正在统一社区。
 

@@ -1,0 +1,58 @@
+[book]
+title = "How Dev — 开发者技术全景指南"
+authors = ["zachary"]
+description = "一份技术全景文档，让开发者在接触新语言/技术栈时快速建立心智模型和工具链认知"
+language = "zh"
+text-direction = "ltr"
+
+[rust]
+edition = "2021"
+
+[build]
+build-dir = "book"
+create-missing = true
+use-default-preprocessors = true
+
+# ---------------------------------------------------------------------------
+# HTML 输出配置
+# ---------------------------------------------------------------------------
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+smart-punctuation = true
+definition-lists = true
+admonitions = true
+no-section-label = false
+hash-files = true
+sidebar-header-nav = true
+
+# 可打印的单页版本
+[output.html.print]
+enable = true
+page-break = true
+
+# 侧边栏折叠
+[output.html.fold]
+enable = false
+level = 0
+
+# 代码游乐场
+[output.html.playground]
+editable = false
+copyable = true
+copy-js = true
+line-numbers = false
+runnable = true
+
+# 内置搜索
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = false
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+copy-js = true
