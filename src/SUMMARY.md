@@ -27,6 +27,19 @@
 - [JavaScript](languages/javascript.md)
 - [Typst](languages/typst.md)
 
+# Web 架构——代码跑在哪、怎么通信、怎么部署
+
+- [目录导读](architecture/README.md)
+- [运行时模型](architecture/01-runtime-model.md)
+- [构建与编译](architecture/02-build-and-compile.md)
+- [项目组织](architecture/03-project-organization.md)
+- [部署全景](architecture/04-deployment.md)
+- [技术选型](architecture/05-tech-selection.md)
+- [生产场景模式](architecture/06-production-patterns.md)
+- [生态基础设施](architecture/07-ecosystem-infra.md)
+- [文件后缀速查](architecture/appendix/file-extensions.md)
+- [框架到底是什么](architecture/appendix/what-is-a-framework.md)
+
 # 按领域的跨语言指南
 
 - [前端](domains/frontend.md)
@@ -34,4 +47,5 @@
 - [系统架构](domains/system-architecture.md)
 - [开发生态](domains/development-ecosystem.md)
 - [生态现状](domains/ecosystem-state.md)
+- [Web 架构通识](domains/web-architecture.md)
 - [参考项目](domains/reference-projects.md)
